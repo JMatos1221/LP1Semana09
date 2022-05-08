@@ -1,4 +1,4 @@
-﻿namespace AnimInterf // Note: actual namespace depends on the project name.
+﻿namespace AnimInterf
 {
     internal class Program
     {
