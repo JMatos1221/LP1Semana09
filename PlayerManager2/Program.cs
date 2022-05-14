@@ -1,4 +1,4 @@
-﻿namespace PlayerManager1
+﻿namespace PlayerManager2
 {
     internal class Program
     {
@@ -66,7 +66,9 @@
         public IEnumerable<Player> GetPlayersWithScoreGreaterThan(
             IEnumerable<Player> players, int min)
         {
-            return players.Where(p => p.Score > min);
+            foreach (Player p in players)
+                if (p.Score > min)
+                    yield return p;
         }
 
 
